@@ -139,13 +139,13 @@ async function signIn(req, res) {
         result: null,
       };
     }
-    if (loginDetails[0].is_email_verified == 0) {
+    /* if (loginDetails[0].is_email_verified == 0) {
       throw {
         statusCode: statusCodes.bad_request,
         message: messages.emailVerify,
         result: null,
       };
-    }
+    } */
     const userDetails = {
       firstName: loginDetails[0].first_name,
       lastName: loginDetails[0].last_name,
