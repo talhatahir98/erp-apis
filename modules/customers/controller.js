@@ -46,7 +46,7 @@ async function registration(req, res) {
       body.state,
       body.zipcode,
     ]);
-    let token = await functions.tokenEncrypt(body.email);
+    /* let token = await functions.tokenEncrypt(body.email);
     token = Buffer.from(token, "ascii").toString("hex");
     let emailMessage = fs
       .readFileSync("common/EmailTemplate/welcome.html", "utf8")
@@ -54,7 +54,7 @@ async function registration(req, res) {
     emailMessage = emailMessage
       .replace("$fullname", body.firstName)
       .replace("$link", config.emailVerificationLink + token);
-    functions.sendEmail(body.email, "Welcome to Smart Store", emailMessage);
+    functions.sendEmail(body.email, "Welcome to Smart Store", emailMessage); */
 
     return res.json({
       status: {
