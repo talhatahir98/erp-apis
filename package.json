@@ -6,6 +6,10 @@
     "start": "SET NODE_ENV=development&&node ./bin/www",
     "start:production": "SET NODE_ENV=production&&node ./bin/www"
   },
+  "scripts": {
+  "start": "set NODE_ENV=development&& node ./bin/www"
+}
+
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
